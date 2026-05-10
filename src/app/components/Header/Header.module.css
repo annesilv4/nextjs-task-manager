@@ -1,6 +1,7 @@
 .header {
   background-color: var(--bg-header);
   padding: 1rem 10rem;
+  border-bottom: 2px solid var(--brd-color);
 }
 
 .header__container {
