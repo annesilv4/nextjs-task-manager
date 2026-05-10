@@ -1,6 +1,8 @@
 import type { Metadata } from "next";
 // @ts-expect-error - CSS side-effect import
 import "@/styles/globals.css";
+import Header from "./components/Header";
+import Footer from "./components/Footer";
 
 export const metadata: Metadata = {
   title: "TaskFlow | Página Inicial",
@@ -15,7 +17,9 @@ export default function RootLayout({
   return (
     <html lang="pt-BR">
       <body>
-        {children}
+        <Header />
+        <div className="page-content">{children}</div>
+        <Footer />
       </body>
     </html>
   );
