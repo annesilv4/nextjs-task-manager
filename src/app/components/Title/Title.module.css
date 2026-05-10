@@ -1,0 +1,17 @@
+.title {
+  padding: 1rem 2rem;
+  color: var(--txt-color);
+  font-size: 2rem;
+  text-align: center;
+  position: relative;
+}
+
+.title::after {
+  content: "";
+  display: block;
+  width: 200px;
+  height: 4px;
+  background-color: var(--txt-color-secondary);
+  margin: 8px auto 0;
+  border-radius: 2px;
+}
