@@ -5,8 +5,14 @@
   padding: 2rem;
 }
 
-.btnAdd {
+.info {
   padding: 2rem;
   display: flex;
-  justify-content: end;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.total {
+  font-size: 1.1rem;
+  font-weight: bold;
 }
