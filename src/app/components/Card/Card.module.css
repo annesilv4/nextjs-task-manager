@@ -1,0 +1,28 @@
+.card {
+  display: flex;
+  flex-direction: column;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+  transition: transform 0.3s;
+}
+
+.card:hover {
+  transform: scale(1.05);
+}
+
+.card__info {
+  padding: 1rem;
+  flex: 1;
+}
+
+.card__title {
+  font-size: 1.1rem;
+  color: var(--txt-color);
+  margin: 0 0 0.5rem 0;
+}
+
+.card__description {
+  font-size: 0.9rem;
+  color: #3e3e3e;
+}
