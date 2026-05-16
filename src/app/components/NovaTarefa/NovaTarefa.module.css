@@ -1,0 +1,48 @@
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 2rem;
+}
+
+.form__title {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.form__title label {
+  font-size: 1.1rem;
+  font-weight: bold;
+}
+
+.form__title input {
+  padding: 0.5rem;
+  border-radius: 8px;
+  border: 1px solid var(--brd-color);
+}
+
+.form__description {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.form__description label {
+  font-size: 1.1rem;
+  font-weight: bold;
+}
+
+.form__description textarea {
+  padding: 0.5rem;
+  border-radius: 8px;
+  border: 1px solid var(--brd-color);
+}
+
+.form__button {
+  display: flex;
+  justify-content: center;
+  margin-top: 2rem;
+}
