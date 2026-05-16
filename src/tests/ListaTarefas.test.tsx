@@ -26,3 +26,19 @@ test("Renderiza as tarefas iniciais", () => {
     render(<ListaTarefas tarefasIniciais={tarefasIniciais} />);
     expect(screen.getByText("Tarefa inicial")).toBeInTheDocument();
 });
+
+test("inclui tarefas extras salvas no localStorage", async () => {
+    salvarTarefaExtra({
+        id: "99",
+        title: "Tarefa extra",
+        description: "Salva pelo formulário",
+        status: "pending",
+    });
+
+    render(<ListaTarefas tarefasIniciais={tarefasIniciais} />);
+
+    await waitFor(() => {
+        expect(screen.getByText("Tarefa extra")).toBeInTheDocument();
+    });
+    expect(screen.getByText(/Você possuí 2 tarefas/)).toBeInTheDocument();
+});
