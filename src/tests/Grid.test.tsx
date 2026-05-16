@@ -34,7 +34,12 @@ test("deve renderizar os cards para cada tarefa", () => {
     render(<Grid tarefas={tarefasMock} />);
     const cards = screen.getAllByTestId('card');
     expect(cards).toHaveLength(2);
-})
+});
+
+test("exibe o total de tarefas retornado pelo hook useContadorDeTarefas", () => {
+    render(<Grid tarefas={tarefasMock} />);
+    expect(screen.getByText("Você possuí 2 tarefas")).toBeInTheDocument();
+});
 
 test("deve exibir o título de cada tarefa nos cards", () => {
     render(<Grid tarefas={tarefasMock} />);
