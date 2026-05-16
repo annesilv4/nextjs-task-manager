@@ -1,6 +1,6 @@
 import { getTarefas } from "@/data/tarefas";
 import Title from "./components/Title";
-import Grid from "./components/Grid";
+import ListaTarefas from "./components/ListaTarefas";
 
 export default async function Home() {
   const tasks = await getTarefas();
@@ -8,7 +8,7 @@ export default async function Home() {
   return (
     <>
       <Title title="Lista de Tarefas" />
-      <Grid tarefas={tasks} />
+      <ListaTarefas tarefasIniciais={tasks} />
     </>
   );
 }
