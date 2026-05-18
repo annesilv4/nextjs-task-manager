@@ -1,5 +1,4 @@
 import type { Metadata } from "next";
-// @ts-expect-error - CSS side-effect import
 import "@/styles/globals.css";
 import Header from "./components/Header";
 import Footer from "./components/Footer";

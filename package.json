@@ -7,8 +7,7 @@
     "build": "next build",
     "start": "next start",
     "lint": "eslint",
-    "test": "jest --watch-all",
-    "test:ci": "jest --watchAll=false"
+    "test": "jest --watchAll=false"
   },
   "dependencies": {
     "next": "^15.5.18",
